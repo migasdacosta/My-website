@@ -29,20 +29,46 @@ body {
       background-color: @aside-color;
       color: @main-color;
       
+      @media (max-width: 979px) {
+          position: relative;
+          width: 100%;
+          height: 60px;
+      }
+      
       div.aux {
           position: fixed;
           width: 33.3333333%;
           
-          @media (max-width: 1200px) {
+          @media (max-width: 979px) {
               position: relative;
               width: 100%;
           }
       
-          section.logo h1 {
-              font-family: @title-font;
-              font-weight: @title-font-weight;
-              margin-top: 0px;
-              padding: 50px;
+          section.logo {
+          	padding: 50px;
+          	
+          	@media (max-width: 979px) {
+          		padding: 10px 50px;
+          	}
+          	
+          	a {
+          		float: right;
+          		
+          		i {
+          			line-height: 2.8em;
+          		}
+          	}
+          	
+          	h1 {
+          		font-family: @title-font;
+          		font-weight: @title-font-weight;
+          		margin-top: 0px;
+          		font-size: 2.2em;
+          		
+          		@media (max-width: 979px) {
+          			font-size: 2em;
+          		}
+          	}
           }
           
           section.intro p {
@@ -52,6 +78,7 @@ body {
               text-transform: uppercase;
               padding: 0px 50px;
               font-weight: 500;
+              line-height: 1.3em;
           }
           
           nav ul {
@@ -74,7 +101,7 @@ body {
       background-color: @main-color;
       padding-left: 0px;
       
-      @media (max-width: 1200px) {
+      @media (max-width: 979px) {
           position: relative;
           width: 100%;
       }
@@ -100,7 +127,7 @@ body {
               -moz-animation-duration: @animations-time;
               -webkit-animation-duration: @animations-time;
               
-              @media (max-width: 1200px) {
+              @media (max-width: 979px) {
                   position: relative;
                   width: 100%;
                   background-repeat: no-repeat;
@@ -146,7 +173,7 @@ body {
                   -webkit-animation-duration: @animations-time;
                   width: 32%;
                   
-                  @media (max-width: 1200px) {
+                  @media (max-width: 979px) {
                       width: 100%;
                       animation: none;
                       -o-animation: none;
@@ -176,6 +203,9 @@ footer {
   }
   
 }
+
+
+// Javascript Classes
 
 
 // Animation
