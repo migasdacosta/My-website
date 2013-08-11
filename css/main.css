@@ -35,7 +35,7 @@ body {
 }
 @media (max-width: 979px) {
   .wrapper aside div.aux section.logo {
-    padding: 10px 50px;
+    padding: 10px 15px;
   }
 }
 .wrapper aside div.aux section.logo a {
@@ -43,6 +43,7 @@ body {
 }
 .wrapper aside div.aux section.logo a i {
   line-height: 2.8em;
+  color: white;
 }
 .wrapper aside div.aux section.logo h1 {
   font-family: 'Ubuntu', sans-serif;
@@ -122,13 +123,12 @@ body {
   background-color: #ffffff;
 }
 .wrapper div.main section.case-study article header {
-  padding-left: 70px;
-  padding-top: 60px;
+  padding: 60px 70px 0px 70px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .wrapper div.main section.case-study article header {
-    padding-left: 0px;
-    padding-top: 20px;
+    padding: 20px 0px;
   }
 }
 .wrapper div.main section.case-study article header h2 {
