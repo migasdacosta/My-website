@@ -1,6 +1,11 @@
 body {
   background-color: #21282e !important;
 }
+@media (max-width: 767px) {
+  body {
+    padding: 0px !important;
+  }
+}
 .wrapper {
   font-family: "Myriad Pro";
 }
@@ -119,6 +124,12 @@ body {
 .wrapper div.main section.case-study article header {
   padding-left: 70px;
   padding-top: 60px;
+}
+@media (max-width: 767px) {
+  .wrapper div.main section.case-study article header {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
 }
 .wrapper div.main section.case-study article header h2 {
   margin-top: 0px;

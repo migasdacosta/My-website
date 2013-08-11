@@ -16,6 +16,10 @@
 
 body {
   background-color: @aside-color !important;
+  
+  @media (max-width: 767px) {
+  	padding: 0px !important;
+  }
 }
 
 
@@ -146,6 +150,11 @@ body {
               header {
                   padding-left: 70px;
                   padding-top: 60px;
+                  
+                  @media (max-width: 767px) {
+                  	padding-left: 0px;
+                  	padding-top: 20px;
+                  }
                   
                   h2 {
                       margin-top: 0px;
