@@ -1,0 +1,230 @@
+@aside-color: #21282e;
+@main-color: rgba(255, 255, 255, 1);
+
+@title-font: 'Ubuntu', sans-serif;
+@title-font-weight: 500;
+
+@content-font: "Myriad Pro";
+@content-font-weight: 300;
+@excerpts-font-color: #8f8f8f;
+
+@section-border-bottom: 1px solid rgba( 0, 0, 0, 0.09);
+@section-border-top: 0px solid rgba( 0, 0, 0, 0.01);
+
+@animations-time: 0.5s;
+
+
+body {
+  background-color: @aside-color !important;
+}
+
+
+
+// Main
+
+.wrapper {
+    font-family: @content-font;
+    
+    aside {
+      background-color: @aside-color;
+      color: @main-color;
+      
+      div.aux {
+          position: fixed;
+          width: 33.3333333%;
+          
+          @media (max-width: 1200px) {
+              position: relative;
+              width: 100%;
+          }
+      
+          section.logo h1 {
+              font-family: @title-font;
+              font-weight: @title-font-weight;
+              margin-top: 0px;
+              padding: 50px;
+          }
+          
+          section.intro p {
+              font-family: @title-font;
+              font-weight: @title-font-weight;
+              font-size: 2em;
+              text-transform: uppercase;
+              padding: 0px 50px;
+              font-weight: 500;
+          }
+          
+          nav ul {
+             padding: 80px 0px 0px 0px;
+             
+             li {
+                 font-family: @content-font;
+                 font-weight: @content-font-weight;
+             
+                 a {
+                     border-radius: 0px;
+                     padding-left: 50px;
+                 }
+             }
+          }
+      }
+    }
+
+    div.main {
+      background-color: @main-color;
+      padding-left: 0px;
+      
+      @media (max-width: 1200px) {
+          position: relative;
+          width: 100%;
+      }
+      
+      section.case-study {
+          border-bottom: @section-border-bottom;
+          border-top: @section-border-top;
+          margin-left: 0px;
+          padding-left: 0px;
+      
+          aside {
+              background-image: url("../img/case_study_thumb1.jpg");
+              height: 250px;
+              width: 0%;
+              padding: 0px;
+              overflow: hidden;
+              animation: slide-hover-back;
+              -o-animation: slide-hover-back;
+              -moz-animation: slide-hover-back;
+              -webkit-animation: slide-hover-back;
+              animation-duration: @animations-time;
+              -o-animation-duration: @animations-time;
+              -moz-animation-duration: @animations-time;
+              -webkit-animation-duration: @animations-time;
+              
+              @media (max-width: 1200px) {
+                  position: relative;
+                  width: 100%;
+                  background-repeat: no-repeat;
+                  background-size: 100%;
+                  animation: none;
+                  -o-animation: none;
+                  -moz-animation: none;
+                  -webkit-animation: none;
+              }
+          }
+          
+          article {
+              height: 250px;
+              background-color: @main-color;
+              
+              header {
+                  padding-left: 70px;
+                  padding-top: 60px;
+                  
+                  h2 {
+                      margin-top: 0px;
+                      font-family: @title-font;
+                      font-weight: @title-font-weight;
+                      text-transform: uppercase;
+                  }
+                  
+                  p {
+                      color: @excerpts-font-color;
+                  }
+              }
+          }
+          
+                    
+          &:hover {
+              aside {
+                  animation: slide-hover;
+                  -o-animation: slide-hover;
+                  -moz-animation: slide-hover;
+                  -webkit-animation: slide-hover;
+                  animation-duration: @animations-time;
+                  -o-animation-duration: @animations-time;
+                  -moz-animation-duration: @animations-time;
+                  -webkit-animation-duration: @animations-time;
+                  width: 32%;
+                  
+                  @media (max-width: 1200px) {
+                      width: 100%;
+                      animation: none;
+                      -o-animation: none;
+                      -moz-animation: none;
+                      -webkit-animation: none;
+                  }
+              }
+          }
+      } 
+    }
+}
+
+
+
+// Footer
+
+footer {
+  font-family: @content-font;
+  
+  aside {
+      background-color: @aside-color;
+      color: @main-color;
+  }
+  
+  div.main {
+     background-color: @main-color; 
+  }
+  
+}
+
+
+// Animation
+
+@keyframes slide-hover 
+{
+0%    { width: 0%; background-position-x: -50px;}
+100%  { width: 32%; background-position-x: 0px; animation-timing-function: ease-out;}
+}
+@-o-keyframes slide-hover 
+{
+0%    { width: 0%; background-position-x: -50px;}
+100%  { width: 32%; background-position-x: 0px; animation-timing-function: ease-out;}
+}
+@-moz-keyframes slide-hover 
+{
+0%    { width: 0%; background-position-x: -50px;}
+100%  { width: 32%; background-position-x: 0px; animation-timing-function: ease-out;}
+}
+@-webkit-keyframes slide-hover 
+{
+0%    { width: 0%; background-position-x: -50px;}
+100%  { width: 32%; background-position-x: 0px; animation-timing-function: ease-out;}
+}
+
+//
+
+@keyframes slide-hover-back
+{
+0%    { width: 32%; background-position-x: 0px;}
+100%  { width: 0%;  background-position-x: -50px; animation-timing-function: ease-out;}
+}
+@-o-keyframes slide-hover-back 
+{
+0%    { width: 32%; background-position-x: 0px;}
+100%  { width: 0%;  background-position-x: -50px; animation-timing-function: ease-out;}
+}
+@-moz-keyframes slide-hover-back 
+{
+0%    { width: 32%; background-position-x: 0px;}
+100%  { width: 0%;  background-position-x: -50px; animation-timing-function: ease-out;}
+}
+@-webkit-keyframes slide-hover-back 
+{
+0%    { width: 32%; background-position-x: 0px;}
+100%  { width: 0%;  background-position-x: -50px; animation-timing-function: ease-out;}
+}
+
+
+
+
+

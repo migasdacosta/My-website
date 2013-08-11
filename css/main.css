@@ -1,0 +1,222 @@
+body {
+  background-color: #21282e !important;
+}
+.wrapper {
+  font-family: "Myriad Pro";
+}
+.wrapper aside {
+  background-color: #21282e;
+  color: #ffffff;
+}
+.wrapper aside div.aux {
+  position: fixed;
+  width: 33.3333333%;
+}
+@media (max-width: 1200px) {
+  .wrapper aside div.aux {
+    position: relative;
+    width: 100%;
+  }
+}
+.wrapper aside div.aux section.logo h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  margin-top: 0px;
+  padding: 50px;
+}
+.wrapper aside div.aux section.intro p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 0px 50px;
+  font-weight: 500;
+}
+.wrapper aside div.aux nav ul {
+  padding: 80px 0px 0px 0px;
+}
+.wrapper aside div.aux nav ul li {
+  font-family: "Myriad Pro";
+  font-weight: 300;
+}
+.wrapper aside div.aux nav ul li a {
+  border-radius: 0px;
+  padding-left: 50px;
+}
+.wrapper div.main {
+  background-color: #ffffff;
+  padding-left: 0px;
+}
+@media (max-width: 1200px) {
+  .wrapper div.main {
+    position: relative;
+    width: 100%;
+  }
+}
+.wrapper div.main section.case-study {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  border-top: 0px solid rgba(0, 0, 0, 0.01);
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.wrapper div.main section.case-study aside {
+  background-image: url("../img/case_study_thumb1.jpg");
+  height: 250px;
+  width: 0%;
+  padding: 0px;
+  overflow: hidden;
+  animation: slide-hover-back;
+  -o-animation: slide-hover-back;
+  -moz-animation: slide-hover-back;
+  -webkit-animation: slide-hover-back;
+  animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+}
+@media (max-width: 1200px) {
+  .wrapper div.main section.case-study aside {
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: none;
+    -o-animation: none;
+    -moz-animation: none;
+    -webkit-animation: none;
+  }
+}
+.wrapper div.main section.case-study article {
+  height: 250px;
+  background-color: #ffffff;
+}
+.wrapper div.main section.case-study article header {
+  padding-left: 70px;
+  padding-top: 60px;
+}
+.wrapper div.main section.case-study article header h2 {
+  margin-top: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.wrapper div.main section.case-study article header p {
+  color: #8f8f8f;
+}
+.wrapper div.main section.case-study:hover aside {
+  animation: slide-hover;
+  -o-animation: slide-hover;
+  -moz-animation: slide-hover;
+  -webkit-animation: slide-hover;
+  animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  width: 32%;
+}
+@media (max-width: 1200px) {
+  .wrapper div.main section.case-study:hover aside {
+    width: 100%;
+    animation: none;
+    -o-animation: none;
+    -moz-animation: none;
+    -webkit-animation: none;
+  }
+}
+footer {
+  font-family: "Myriad Pro";
+}
+footer aside {
+  background-color: #21282e;
+  color: #ffffff;
+}
+footer div.main {
+  background-color: #ffffff;
+}
+@keyframes slide-hover {
+  0% {
+    width: 0%;
+    background-position-x: -50px;
+  }
+  100% {
+    width: 32%;
+    background-position-x: 0px;
+    animation-timing-function: ease-out;
+  }
+}
+@-o-keyframes slide-hover {
+  0% {
+    width: 0%;
+    background-position-x: -50px;
+  }
+  100% {
+    width: 32%;
+    background-position-x: 0px;
+    animation-timing-function: ease-out;
+  }
+}
+@-moz-keyframes slide-hover {
+  0% {
+    width: 0%;
+    background-position-x: -50px;
+  }
+  100% {
+    width: 32%;
+    background-position-x: 0px;
+    animation-timing-function: ease-out;
+  }
+}
+@-webkit-keyframes slide-hover {
+  0% {
+    width: 0%;
+    background-position-x: -50px;
+  }
+  100% {
+    width: 32%;
+    background-position-x: 0px;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes slide-hover-back {
+  0% {
+    width: 32%;
+    background-position-x: 0px;
+  }
+  100% {
+    width: 0%;
+    background-position-x: -50px;
+    animation-timing-function: ease-out;
+  }
+}
+@-o-keyframes slide-hover-back {
+  0% {
+    width: 32%;
+    background-position-x: 0px;
+  }
+  100% {
+    width: 0%;
+    background-position-x: -50px;
+    animation-timing-function: ease-out;
+  }
+}
+@-moz-keyframes slide-hover-back {
+  0% {
+    width: 32%;
+    background-position-x: 0px;
+  }
+  100% {
+    width: 0%;
+    background-position-x: -50px;
+    animation-timing-function: ease-out;
+  }
+}
+@-webkit-keyframes slide-hover-back {
+  0% {
+    width: 32%;
+    background-position-x: 0px;
+  }
+  100% {
+    width: 0%;
+    background-position-x: -50px;
+    animation-timing-function: ease-out;
+  }
+}
