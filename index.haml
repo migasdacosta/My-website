@@ -1,0 +1,113 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %title
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    / Place favicon.ico and apple-touch-icon.png in the root directory
+    %link{:href => "css/normalize.css", :rel => "stylesheet"}/
+    %link{:href => "css/main.css", :rel => "stylesheet"}/
+    %link{:href => "css/main.less", :rel => "stylesheet"}/
+    / Bootstrap
+    %link{:href => "css/bootstrap.min.css", :media => "screen", :rel => "stylesheet"}/
+    / Font Awesome
+    %link{:href => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css", :rel => "stylesheet"}/
+    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", :rel => "stylesheet"}/
+    / Google Fonts
+    %link{:href => "http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "js/vendor/modernizr-2.6.2.min.js"}
+  %body
+    /[if lt IE 7]
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    .wrapper
+      .row{:style => "margin: 0px;"}
+        %aside{:style => "padding: 0px;"}
+          .aux
+            %section.logo
+              %a{:href => "#"}
+                %i.icon-large.icon-align-justify.hidden-desktop.icon-white
+              %h1 Mikejolz
+            %section.intro
+              %p
+                UI Designer
+                = succeed "&" do
+                  %br/
+                Frontend Dev,
+                = succeed "at" do
+                  %br/
+                Dachis Group,
+                = succeed "@London" do
+                  %br/
+            %nav
+              %ul.nav.nav-pills.nav-stacked
+                %li.active
+                  %a{:href => "#"} Portfolio
+                %li
+                  %a{:href => "#"} Case Study
+                %li
+                  %a{:href => "#"} About me
+                %li
+                  %a{:href => "#"} My Blog
+        .main
+          %section.case-study.row
+            %aside.col-lg-4
+            %article.col-lg-8
+              %header
+                %h2 Oakley - Tour de France
+                %p Cras justo, dapibus ilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Lorlor sitt, consectetur adipiscing elit. Sed posuere etur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+          %section.case-study.row
+            %aside.col-lg-4
+            %article.col-lg-8
+              %header
+                %h2 Wings - Pharmacy Websites
+                %p Cras justo odio, dapus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+          %section.case-study.row
+            %aside.col-lg-4
+            %article.col-lg-8
+              %header
+                %h2 Mikejolz - Redesign
+                %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+          %section.case-study.row
+            %aside.col-lg-4
+            %article.col-lg-8
+              %header
+                %h2 Illustrations – Creative Banners
+                %p Cras justo odio, dapibus ac  in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+          %section.case-study.row
+            %aside.col-lg-4
+            %article.col-lg-8
+              %header
+                %h2 3D Enviorments – Forsight Experience
+                %p Cras justo odio, dapibus ac facilisis in, egestas eget quastibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+    /
+      <footer>
+      <div class="row">
+      <aside class="col-lg-4">Footer Sidebar</aside>
+      <div class="col-lg-8 main">Footer Main</div>
+      </div>
+      </footer>
+    / Scripts
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')    %script{:src => "js/plugins.js"}
+    %script{:src => "js/main.js"}
+    / Google Analytics: change UA-XXXXX-X to be your site's ID.
+    :javascript
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+            / JavaScript plugins (requires jQuery)
+    %script{:src => "http://code.jquery.com/jquery.js"}
+    / Include all compiled plugins (below), or include individual files as needed
+    %script{:src => "js/bootstrap.min.js"}
+    / Live Reload Snnipet
+    :javascript
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
