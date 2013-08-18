@@ -32,15 +32,16 @@ body {
     aside {
       background-color: @aside-color;
       color: @main-color;
+      width: 30%;
+      float: left;
       
       @media (max-width: 979px) {
           position: relative;
           width: 100%;
+          float: none;
       }
       
       div.aux {
-          position: fixed;
-          width: 33.3333333%;
           
           @media (max-width: 979px) {
               position: relative;
@@ -104,10 +105,13 @@ body {
     div.main {
       background-color: @main-color;
       padding-left: 0px;
+      width: 70%;
+      float: right;
       
       @media (max-width: 979px) {
           position: relative;
           width: 100%;
+          float: none;
       }
       
       section.case-study {
