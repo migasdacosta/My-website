@@ -34,11 +34,11 @@
           <div class='aux'>
             <section class='logo'>
               <a href='#'>
-                <i class='icon-large icon-align-justify hidden-desktop icon-white'></i>
+                <i class='icon-large icon-align-justify icon-white hidden-desktop'></i>
               </a>
               <h1>Mikejolz</h1>
             </section>
-            <section class='intro'>
+            <section class='intro visible-desktop'>
               <p>
                 UI Designer
                 <br>&
@@ -64,11 +64,53 @@
                 </li>
               </ul>
             </nav>
+            <!--<section class="social hidden-phone">
+                <a href='http://dribbble.com/mikejolz' alt='Dribbble'  target="_blank">
+                	Dribbble
+                </a>
+                <a href='https://twitter.com/Mikejolz' alt='Twitter'  target="_blank">
+                	Twitter
+                </a>
+                <a href='http://www.linkedin.com/pub/mike-costa/a/4b9/926' alt='Linkedin'  target="_blank">
+                	Linkedin
+                </a>
+                <a href='#' alt='Email'>
+                	Say Hello
+                </a>
+            </section>-->
           </div>
         </aside>
         <div class='main'>
         	<section class="dribbble">
-        		<ul id="portfolio"></ul>
+        		<ul>
+					<li><a href="#"><img src="img/Dribbble-shots1.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_18.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots3.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_19.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots5.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_20.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots7.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_21.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots9.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_22.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots7.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_23.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots9.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_24.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots2.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_25.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots4.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots5.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_26.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots7.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_27.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots9.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_28.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots7.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/dribbble_46.jpg" alt="teste" /></a></li>
+					<li><a href="#"><img src="img/Dribbble-shots9.jpg" alt="teste" /></a></li>
+        		</ul>
+        		<div class="clearfix"></div>
         	</section>
         </div>
       </div>
@@ -105,5 +147,14 @@
     <!-- Jribbble -->
     <script src="js/jribbble.js"></script>
     <script src="js/main.js"></script>
+    
+    <script>
+    	
+    	$( "i" ).click(function() {
+    		$("nav").css("height","0%");
+    	});
+    	
+    </script>
+    
   </body>
 </html>
